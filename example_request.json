@@ -1,3 +1,55 @@
 "{'token':'uzo91PTPIsuj1Pt7eSaydy9O', 'team_id':'T0001',
-'team_domain':'example', 'channel_id':'C2147483705', 'channel_name':'test',
+'team_domain':'apuleius', 'channel_id':'C2147483705', 'channel_name':'botparty',
 'user_id':'U2147483697', 'user_name':'liss', 'command':'/ping', 'text':'94070'}"
+
+
+# /ex Andrea
+"{'token':'uzo91PTPIsuj1Pt7eSaydy9O', 'team_id':'T0001',
+'team_domain':'apuleius', 'channel_id':'C2147483705', 'channel_name':'botparty',
+'user_id':'U2147483697', 'user_name':'liss', 'command':'/ex Andrea', 'text':'94070'}"
+
+#> "Andrea is a pixie..."
+
+
+# /ex @andrea
+"{'token':'uzo91PTPIsuj1Pt7eSaydy9O', 'team_id':'T0001',
+'team_domain':'apuleius', 'channel_id':'C2147483705', 'channel_name':'botparty',
+'user_id':'U2147483697', 'user_name':'liss', 'command':'/ex Andrea', 'text':'94070'}"
+#> "Andrea is a pixie..."
+
+
+# /ex @kyborg
+"{'token':'uzo91PTPIsuj1Pt7eSaydy9O', 'team_id':'T0001',
+'team_domain':'apuleius', 'channel_id':'C2147483705', 'channel_name':'botparty',
+'user_id':'U2147483697', 'user_name':'liss', 'command':'/ex @kyborg', 'text':'94070'}"
+#> "Kylie is a cyborg..."
+#> "Kale is a cyborg..."
+
+# /use Kylie
+"{'token':'uzo91PTPIsuj1Pt7eSaydy9O', 'team_id':'T0001',
+'team_domain':'apuleius', 'channel_id':'C2147483705', 'channel_name':'botparty',
+'user_id':'U2147483697', 'user_name':'liss', 'command':'/use Kylie', 'text':'94070'}"
+#> "Kylie is not one of your characters."
+
+# /use Kylie
+"{'token':'uzo91PTPIsuj1Pt7eSaydy9O', 'team_id':'T0001',
+'team_domain':'apuleius', 'channel_id':'C2147483705', 'channel_name':'botparty',
+'user_id':'U2147483697', 'user_name':'kyborg', 'command':'/use Kylie', 'text':'94070'}"
+#> "Using Kylie as your character."
+
+# /use Kylie cowgirl
+"{'token':'uzo91PTPIsuj1Pt7eSaydy9O', 'team_id':'T0001',
+'team_domain':'apuleius', 'channel_id':'C2147483705', 'channel_name':'botparty',
+'user_id':'U2147483697', 'user_name':'kyborg', 'command':'/use Kylie 1', 'text':'94070'}"
+#> "Using Kylie as your character."
+
+# /characters
+"{'token':'uzo91PTPIsuj1Pt7eSaydy9O', 'team_id':'T0001',
+'team_domain':'apuleius', 'channel_id':'C2147483705', 'channel_name':'botparty',
+'user_id':'U2147483697', 'user_name':'kyborg', 'command':'/use Kylie', 'text':'94070'}"
+#> "*@kyborg's Characters:"\
+#> "*Kale*:"\
+#> "Description 1: 'Kale is...'"\
+#> "*Kylie*:"\
+#> "Default (active): 'Kylie is...'"\
+#> "Cowgirl: 'Kylie is...'"\

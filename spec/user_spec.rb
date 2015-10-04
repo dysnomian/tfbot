@@ -1,8 +1,13 @@
 require 'spec_helper'
 
 describe User do
-    let(:user)          { User.new(name: existing_name, description: "is a description") }
-    let(:existing_name) { "Name" }
+  let(:user) do
+    User.new(
+      name: name,
+      description: "is a description")
+  end
+
+  let(:name) { "Name" }
 
   describe '#readable_description' do
     let(:expected_description) { 'Name is a description' }
@@ -18,7 +23,7 @@ describe User do
   end
 
   describe '.find_by_name' do
-    let(:user) { User.create(name: existing_name, description: "is a description") }
+    let(:user) { User.create(name: name, description: "is a description") }
 
     context 'when the user exists' do
       it 'returns the expected user' do

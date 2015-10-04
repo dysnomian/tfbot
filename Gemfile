@@ -1,10 +1,11 @@
 source 'https://rubygems.org'
 
 gem 'pg'
+gem 'sequel'
 gem 'grape'
 gem 'figaro'
-gem 'sequel'
 gem 'pry'
+gem 'database_cleaner'
 
 group :test do
   gem 'rspec'
