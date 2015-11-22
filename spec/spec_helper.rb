@@ -1,3 +1,4 @@
+require './lib/tfbot/database'
 require './lib/tfbot'
 require 'database_cleaner'
 

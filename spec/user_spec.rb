@@ -1,33 +1,14 @@
 require 'spec_helper'
 
 describe User do
-  let(:user) do
-    User.new(
-      name: name,
-      description: "is a description")
-  end
+  before { User.create(name: name) }
 
   let(:name) { "Name" }
 
-  describe '#readable_description' do
-    let(:expected_description) { 'Name is a description' }
-
-    it 'returns a human_formatted description' do
-      expect(user.readable_description).to eq(expected_description)
-    end
-
-    it 'removes the second occurence of a name' do
-      user.description = "Name is a description."
-      expect(user.readable_description).to eq("Name is a description.")
-    end
-  end
-
   describe '.find_by_name' do
-    let(:user) { User.create(name: name, description: "is a description") }
-
     context 'when the user exists' do
       it 'returns the expected user' do
-        expect(User.find_by_name(existing_name)).to_not be_falsey
+        expect(User.find_by_name(name)).to_not be_falsey
       end
     end
 
